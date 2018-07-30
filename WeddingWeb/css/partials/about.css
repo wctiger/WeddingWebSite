@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.wrapper,
+.about  {
+  max-width: 1724px;
+  margin: 0 auto; }
+
+.title,
+.about__title {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--color-darkgreen);
+  margin: 0; }
+  @media (min-width: 768px) {
+    .title,
+    .about__title {
+      font-size: 36px;
+      line-height: 36px; } }
+
+.about {
+  margin: 60px auto; }
+  @media (min-width: 768px) {
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 160px auto; } }
+
+.about__visual {
+  max-width: 100%; }
+  @media (min-width: 768px) {
+    .about__visual {
+      max-width: 300px; } }
+  @media (min-width: 1024px) {
+    .about__visual {
+      max-width: 400px; } }
+
+.about__visual__wrapper {
+  height: 200px;
+  overflow: hidden; }
+  @media (min-width: 500px) {
+    .about__visual__wrapper {
+      height: 300px; } }
+  @media (min-width: 768px) {
+    .about__visual__wrapper {
+      height: auto;
+      overflow: visible; } }
+
+.about__subtitle__line {
+  width: 60px;
+  float: left;
+  margin: 11px -70px 0; }
+
+.about__content {
+  padding-top: 40px; }
+  @media (min-width: 768px) {
+    .about__content {
+      padding: 40px 40px 40px 100px;
+      max-width: 600px; } }
+
+.about__emoji {
+  filter: grayscale(0.4) hue-rotate(20deg); }
+
+/*# sourceMappingURL=about.css.map */

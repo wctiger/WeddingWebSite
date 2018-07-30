@@ -1,0 +1,32 @@
+.line {
+  display: block; }
+
+.line--vertical {
+  height: 100px;
+  width: 1px; }
+
+.line--central {
+  margin: 0 auto; }
+
+.line--horizontal {
+  width: 100px;
+  height: 1px; }
+
+.line--pink {
+  background: var(--color-pink); }
+
+.lines {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--color-pink); }
+  @media (min-width: 768px) {
+    .lines {
+      margin-bottom: 100px; } }
+  .lines .line {
+    margin: 10px auto;
+    height: 30px; }
+    @media (min-width: 768px) {
+      .lines .line {
+        height: 50px; } }
+
+/*# sourceMappingURL=lines.css.map */

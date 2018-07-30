@@ -1,0 +1,24 @@
+.wrapper {
+  max-width: 1724px;
+  margin: 0 auto; }
+
+main > footer {
+  text-align: center;
+  margin: 50px auto 50px;
+  font-size: 14px;
+  color: #dec7bf;
+  line-height: 10px;
+  text-transform: uppercase;
+  font-size: 10px; }
+  @media (min-width: 768px) {
+    main > footer {
+      margin-top: 100px; } }
+  main > footer span {
+    font-size: 22px; }
+  main > footer small, main > footer a {
+    color: #ccc; }
+  main > footer a {
+    text-decoration: none;
+    font-weight: bold; }
+
+/*# sourceMappingURL=footer.css.map */

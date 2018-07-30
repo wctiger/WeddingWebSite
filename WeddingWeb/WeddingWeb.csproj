@@ -1,0 +1,246 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ADD4EAF0-C6D3-4F6B-8AC9-32DEEBC911CF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WeddingWeb</RootNamespace>
+    <AssemblyName>WeddingWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\components\buttons.css.map" />
+    <Content Include="css\components\buttons.scss" />
+    <Content Include="css\components\fireworks.css.map" />
+    <Content Include="css\components\fireworks.scss" />
+    <Content Include="css\components\lines.css.map" />
+    <Content Include="css\components\lines.scss" />
+    <Content Include="css\fonts\circular-book.woff" />
+    <Content Include="css\fonts\circular-medium.woff" />
+    <Content Include="css\layout\footer.css.map" />
+    <Content Include="css\layout\footer.scss" />
+    <Content Include="css\layout\header.css.map" />
+    <Content Include="css\layout\header.scss" />
+    <Content Include="css\layout\main.css.map" />
+    <Content Include="css\layout\main.scss" />
+    <Content Include="css\partials\about.css.map" />
+    <Content Include="css\partials\about.scss" />
+    <Content Include="css\partials\ceremony.css.map" />
+    <Content Include="css\partials\ceremony.scss" />
+    <Content Include="css\partials\gifts.css.map" />
+    <Content Include="css\partials\gifts.scss" />
+    <Content Include="css\partials\intro.css.map" />
+    <Content Include="css\partials\intro.scss" />
+    <Content Include="css\partials\party.css.map" />
+    <Content Include="css\partials\party.scss" />
+    <Content Include="css\partials\program.css.map" />
+    <Content Include="css\partials\program.scss" />
+    <Content Include="css\partials\rsvp.css.map" />
+    <Content Include="css\partials\rsvp.scss" />
+    <Content Include="css\partials\weddingparty.css.map" />
+    <Content Include="css\partials\weddingparty.scss" />
+    <Content Include="css\styles.css.map" />
+    <Content Include="css\styles.scss" />
+    <Content Include="css\utils\animations.css.map" />
+    <Content Include="css\utils\animations.scss" />
+    <Content Include="css\utils\colours.css.map" />
+    <Content Include="css\utils\colours.scss" />
+    <Content Include="css\utils\fonts.css.map" />
+    <Content Include="css\utils\fonts.scss" />
+    <Content Include="css\utils\typography.css.map" />
+    <Content Include="css\utils\typography.scss" />
+    <Content Include="css\webfonts\fa-brands-400.eot" />
+    <Content Include="css\webfonts\fa-brands-400.ttf" />
+    <Content Include="css\webfonts\fa-brands-400.woff" />
+    <Content Include="css\webfonts\fa-brands-400.woff2" />
+    <Content Include="css\webfonts\fa-regular-400.eot" />
+    <Content Include="css\webfonts\fa-regular-400.ttf" />
+    <Content Include="css\webfonts\fa-regular-400.woff" />
+    <Content Include="css\webfonts\fa-regular-400.woff2" />
+    <Content Include="css\webfonts\fa-solid-900.eot" />
+    <Content Include="css\webfonts\fa-solid-900.ttf" />
+    <Content Include="css\webfonts\fa-solid-900.woff" />
+    <Content Include="css\webfonts\fa-solid-900.woff2" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\jingyiguoandxiaoyangweb - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cn\index.html" />
+    <Content Include="css\components\buttons.css" />
+    <Content Include="css\components\fireworks.css" />
+    <Content Include="css\components\lines.css" />
+    <Content Include="css\fonts\fontawesome-all.min.css" />
+    <Content Include="css\layout\footer.css" />
+    <Content Include="css\layout\header.css" />
+    <Content Include="css\layout\main.css" />
+    <Content Include="css\mail_template.html" />
+    <Content Include="css\partials\about.css" />
+    <Content Include="css\partials\ceremony.css" />
+    <Content Include="css\partials\gifts.css" />
+    <Content Include="css\partials\intro.css" />
+    <Content Include="css\partials\party.css" />
+    <Content Include="css\partials\program.css" />
+    <Content Include="css\partials\rsvp.css" />
+    <Content Include="css\partials\weddingparty.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="css\utils\animations.css" />
+    <Content Include="css\utils\colours.css" />
+    <Content Include="css\utils\fonts.css" />
+    <Content Include="css\utils\typography.css" />
+    <Content Include="css\webfonts\fa-brands-400.svg" />
+    <Content Include="css\webfonts\fa-regular-400.svg" />
+    <Content Include="css\webfonts\fa-solid-900.svg" />
+    <Content Include="Default.html" />
+    <Content Include="img\14.jpg" />
+    <Content Include="img\14_sm.jpg" />
+    <Content Include="img\bw-cr.jpg" />
+    <Content Include="img\cityclark.jpg" />
+    <Content Include="img\cityclark_cr.jpg" />
+    <Content Include="img\fangqi.jpg" />
+    <Content Include="img\fangqi_cr.jpg" />
+    <Content Include="img\favicon.png" />
+    <Content Include="img\gallery_sm.jpg" />
+    <Content Include="img\gallery_sm_cr.jpg" />
+    <Content Include="img\jiawei.jpg" />
+    <Content Include="img\jiawei_cr.jpg" />
+    <Content Include="img\jing.jpg" />
+    <Content Include="img\jing_cr.jpg" />
+    <Content Include="img\kai.jpg" />
+    <Content Include="img\kai_cr.jpg" />
+    <Content Include="img\lawn_sm.jpg" />
+    <Content Include="img\lawn_sm_cr.jpg" />
+    <Content Include="img\li.jpg" />
+    <Content Include="img\li_cr.jpg" />
+    <Content Include="img\lodge-5.jpg" />
+    <Content Include="img\lodge_sm.jpg" />
+    <Content Include="img\lodge_sm_cr.jpg" />
+    <Content Include="img\memories-sd.jpg" />
+    <Content Include="img\ps15.jpg" />
+    <Content Include="img\ps15_cr.jpg" />
+    <Content Include="img\ps2.jpg" />
+    <Content Include="img\ps2_cr.jpg" />
+    <Content Include="img\ps3.jpg" />
+    <Content Include="img\ps3_cr.jpg" />
+    <Content Include="img\sample-150x200.jpg" />
+    <Content Include="img\us.jpg" />
+    <Content Include="img\venuemap.PNG" />
+    <Content Include="img\vi-jerry-wed-color-616.jpg" />
+    <Content Include="img\withcats.jpg" />
+    <Content Include="img\withcats_cr.jpg" />
+    <Content Include="img\woopwoop-sd.jpg" />
+    <Content Include="img\yuanbo.jpg" />
+    <Content Include="img\yuanbo_cr.jpg" />
+    <Content Include="js\components\animations.js" />
+    <Content Include="js\components\errorTracking.js" />
+    <Content Include="js\components\navigation.js" />
+    <Content Include="js\components\registration.js" />
+    <Content Include="en\index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56805</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56805/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

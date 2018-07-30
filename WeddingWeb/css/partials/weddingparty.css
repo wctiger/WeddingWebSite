@@ -1,0 +1,133 @@
+﻿@charset "UTF-8";
+.wrapper,
+.weddingparty__wrapper {
+  max-width: 1724px;
+  margin: 0 auto; }
+
+.title,
+.weddingparty__title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--color-darkgreen);
+  margin: 0; }
+  @media (min-width: 768px) {
+    .title,
+    .weddingparty__title {
+      font-size: 36px;
+      line-height: 36px; } }
+
+.weddingparty {
+  position: relative; }
+
+.weddingparty__wrapper {
+  max-width: 992px;
+  margin: 70px auto 100px;
+  position: relative;
+  z-index: 20; }
+
+
+.weddingparty__header {    
+    text-align: right;
+}
+@media (min-width: 768px) {    
+   .weddingparty__header {
+       float: right;       
+    } }
+  
+
+.weddingparty__content {
+  padding: 20px;
+  width: 100%;
+  background: #fff;
+  position: relative;
+  z-index: 10; }
+  @media (min-width: 768px) {
+    .weddingparty__content {
+      display: table;
+      padding: 40px;
+       } }
+
+ .weddingparty__content__row{
+   display: table-row;   
+ }
+
+.weddingparty__element {
+    display: flex;
+    padding-bottom:5px;    
+}    
+ @media (min-width:768px){
+    .weddingparty__element {
+        display: table-cell;
+        width: 50%;
+        padding-bottom: 15px;
+    }
+    
+ }
+
+@media (min-width:768px) {
+    .weddingparty__element_rt {
+        text-align:right;
+    }
+}
+
+.weddingparty__element__bio {
+    margin-left: 10px;
+} 
+ @media (min-width:768px){
+    .weddingparty__element__bio {
+        margin:0;
+    } 
+ }
+
+.weddingparty__element__img{  
+  width: 40%;
+  padding: 15px 5px 0px 5px;
+  float: right;  
+}
+.weddingparty__element__img_lt{  
+  width: 40%;
+  padding: 15px 5px 0px 5px;
+  float: left;
+}
+
+.weddingparty__element__desc {
+    display:none;
+}
+@media (min-width: 768px) {
+    .weddingparty__element__desc {
+        display:inherit;
+        margin: 0;
+        font-size: smaller;
+    }
+}
+.weddingparty__element__desc__sm{
+    display:inherit;
+    font-size:smaller;
+}
+@media (min-width:768px){
+    .weddingparty__element__desc__sm {
+        display:none;
+    }
+}
+
+@media (min-width: 768px) {
+    .weddingparty__line {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        bottom: 0;
+        right: 0;
+        border-left: 1px solid var(--color-pink);
+    }
+}
+
+@media (min-width: 768px) {
+  .weddingparty__desc  {
+    margin-top: 20px;
+    display: inline-block;
+    columns: 2; }
+    .weddingparty__desc  p:first-child {
+      margin-top: 0; }     
+  }
+/*# sourceMappingURL=weddingweddingparty.css.map */

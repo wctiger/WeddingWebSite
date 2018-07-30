@@ -1,0 +1,34 @@
+body {
+  font: normal 100%/1.7 "Circular", Helvetica, Arial, sans-serif;
+  line-height: 23px;
+  color: var(--color-grey);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+p a {
+  text-decoration: none;
+  color: var(--color-pink);
+  font-weight: bold;
+  transition: color 300ms ease-in-out; }
+  p a:hover {
+    color: var(--color-darkgreen); }
+
+.title {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--color-darkgreen);
+  margin: 0; }
+  @media (min-width: 768px) {
+    .title {
+      font-size: 36px;
+      line-height: 36px; } }
+
+.title--highlight {
+  color: var(--color-pink); }
+
+.cap::first-letter {
+  font-weight: bold;
+  color: var(--color-pink); }
+
+/*# sourceMappingURL=typography.css.map */

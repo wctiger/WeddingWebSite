@@ -1,0 +1,102 @@
+.wrapper,
+.program {
+  max-width: 1724px;
+  margin: 0 auto; }
+
+.title,
+.program__title {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--color-darkgreen);
+  margin: 0; }
+  @media (min-width: 768px) {
+    .title,
+    .program__title {
+      font-size: 36px;
+      line-height: 36px; } }
+
+.program {
+  margin-top: 100px;
+  max-width: 1400px;
+  text-align: center; }
+  @media (min-width: 1025px) {
+    .program {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 140px; } }
+
+.program__title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 60px; }
+  @media (min-width: 768px) {
+    .program__title {
+      font-size: 30px;
+      line-height: 30px; } }
+
+.program__map {
+  max-width: 100%;
+  transition: opacity 300ms ease-in-out;
+  backface-visibility: hidden;
+  opacity: 0.7;
+  margin: 70px auto; }
+  .program__map:hover {
+    opacity: 1; }
+  @media (min-width: 768px) {
+    .program__map {
+      max-width: 600px;
+      margin: 0; } }
+
+.schedule {
+  width: 100%;
+  margin-bottom: 50px; }
+  @media (min-width: 1025px) {
+    .schedule {
+      width: 50%;
+      margin: 0; } }
+
+@media (min-width: 768px) {
+  .schedule__event {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .schedule__event > div {
+      margin-left: 40px;
+      min-width: 290px; } }
+@media (min-width: 1025px) {
+  .schedule__event {
+    justify-content: flex-start; } }
+.schedule__event .schedule__event__title {
+  color: var(--color-darkgreen);
+  margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .schedule__event .schedule__event__title {
+      margin: 0; } }
+.schedule__event address {
+  font-style: normal; }
+
+.schedule__event__time {
+  font-size: 30px; }
+
+.schedule__separator {
+  margin: 15px 0;
+  display: block; }
+
+.schedule__event__map {
+  text-decoration: none;    
+  margin: 10px 0 0 20px;
+  opacity: 0.6;
+ }
+  @media (min-width: 768px) {
+    .schedule__event__map {
+      
+    } }
+  .schedule__event__map:hover {
+    border: none;
+    opacity: 0.9;
+   }
+
+/*# sourceMappingURL=program.css.map */
